@@ -2,7 +2,7 @@ Table of contents:
 1) Project name
 2)Description
 3) How to set up
-4)
+4) How to use
 
 1)
 Project name: Information/hobby website with a save for later function.
