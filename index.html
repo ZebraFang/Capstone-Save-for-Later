@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>WebDev</title>
+  </head>
+  <body onload="load()">
+    <nav>
+      <!-- Nav bar for link -->
+      <ul class="navbar">
+        <li class="navbar-item">WEBDEV</li>
+        <li class="navbar-item"><a href="about.html">ABOUT</a></li>
+        <li class="navbar-item"><a href="contact.html">CONTACT</a></li>
+        <li class="navbar-item"><a href="saved.html">SAVE FOR LATER</a></li>
+      </ul>
+    </nav>
+    <!-- Introduction image with text for flavour -->
+    <div class="hero">
+      <div class="hero-text">
+        Project About Web Development. A Small Insight.
+      </div>
+    </div>
+    <!-- Unordered list that acts as a navigation tool on the page -->
+    <div id="list-container">
+      <div class="list-card">
+        <ul id="site-index">
+          <li class="index-item">
+            <a href="#wd">Insight into Web Development and the Internet</a>
+          </li>
+          <li class="index-item"><a href="#html">HTML</a></li>
+          <li class="index-item"><a href="#css">CSS</a></li>
+          <li class="index-item"><a href="#js">JavaScript</a></li>
+          <li class="index-item"><a href="#table-section">Frameworks</a></li>
+          <li class="index-item"><a href="#form">Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Main section -->
+    <article>
+      <div id="0" class="wd-container">
+        <h2 class="para-header">
+          An Insight into Web Development and the Internet
+        </h2>
+        <img
+          class="image"
+          src="images/Internet-blue.webp"
+          alt="image of the internet"
+        />
+        <div class="paragraph-wb">
+          <p>
+            Web development involves the work of either creating static web
+            pages or complex programs, social media apps or ecommerce platforms
+            for the World Wide Web (internet). Although web development can
+            include design, engineering, web servers and security, “web
+            development” usually refers to the main non-design aspects of
+            building a website which includes writing markup and code.
+          </p>
+          <br />
+          <p>
+            Web developers usually code in 3 core languages; HTML, CSS and
+            JavaScript but are not limited to only those three. This will be
+            looked at later on. Impacts of web development can be seen from
+            checking your Gmail to logging into Netflix through your web
+            browser. As a web developer you can specialise into three fields,
+            front-end(concerned with the visual aspects), back-end(deals with
+            the server side, part of the site you cannot see or interact with)
+            and fullstack(a combination of front-end and back-end).
+          </p>
+          <br />
+          <p>
+            The internet is a system of interconnected computers initially
+            commissioned by the United States Department of Defense to enable
+            faster sharing of information and resources. In its infancy the
+            internet worked more like an intranet where people connected to the
+            department could access it but by the early 1990s modern businesses
+            began to plug into it marking the beginning of the internet as we
+            know it. A global network. Tim Berners-Lee is credited as the
+            inventor of the World Wide Web and implemented the first browser and
+            Web server.
+          </p>
+        </div>
+        <!-- Grabbing the parent element on click -->
+        <button
+          onclick="addToSaveLater(this.parentElement);"
+          class="save-button"
+        >
+          Save For Later</button
+        ><button onclick="this.innerHTML='Liked!'">Like</button>
+      </div>
+
+      <div id="1" class="wd-container">
+        <h2 class="para-header">HTML</h2>
+        <img class="image" src="images/html.png" alt="image of the internet" />
+        <div class="paragraph-wb">
+          <p>
+            HTML stands for HyperText Markup Language and is the skeleton
+            building blocks of building a website. HTML enables you to add text,
+            images, forms and even videos to your website. The earliest version
+            of HTML has its roots in the latter part of 1990 when Tim
+            Berners-Lee specified HTML and wrote the browser plus server
+            software. We are currently on version 5 and it is managed by the Web
+            Hypertext Application Technology Working Group or WHATWG. Check out
+            this resource to learn more and how to use it. Link -
+            <a href="https://html.com/"> html.com</a>
+          </p>
+          <!-- External link  -->
+        </div>
+        <button
+          class="save-button"
+          onclick="addToSaveLater(this.parentElement)"
+        >
+          Save For Later</button
+        ><button onclick="this.innerHTML='Liked!'">Like</button>
+      </div>
+      <div id="2" class="wd-container">
+        <h2 class="para-header">CSS</h2>
+        <img class="image" src="images/css.png" alt="image of the internet" />
+        <div class="paragraph-wb">
+          <p>
+            Cascading Styling Sheets or CSS is a style sheet language which
+            essentially focuses on the presentation of structured documents,
+            usually HTML. It enables layout changes, different fonts, colour
+            changes and even animations. The cascading part of the name refers
+            to the priority scheme involved with styling rules. This helps
+            determine which styling rule overwrite another and this is
+            predictable. As an example setting the body tag in html to a certain
+            font will cascade down to oter elements inside the body tag.Håkon
+            Wium Lie and Bert Bos developed and helped CSS1 get released in
+            1996. Two more versions have followed in the years up until CSS3. It
+            is managed and developed by World Wide Web Consortium or W3C. Check
+            out this resource to learn more and how to use it. Link -
+            <a href="https://css-tricks.com/"> CSS-Tricks</a
+            ><!-- External link  -->
+          </p>
+        </div>
+        <button
+          class="save-button"
+          onclick="addToSaveLater(this.parentElement)"
+        >
+          Save For Later</button
+        ><button onclick="this.innerHTML='Liked!'">Like</button>
+      </div>
+      <div id="3" class="wd-container">
+        <h2 class="para-header">JavaScript</h2>
+        <img class="image" src="images/js.png" alt="image of the internet" />
+        <div class="paragraph-wb">
+          <p>
+            JavaScript or JS is a logic programming language that along with
+            HTML and CSS act as one one of the core languages in web
+            development. As of 2022 98% of websites use JavaScript on the client
+            side for webpage behaviour. JS truly helps make the webpage more
+            interactive, such as changing a state or creating an action after
+            clicking a button for example. This becomes more powerful with
+            frameworks like React or Angular. Before JS web pages used to be
+            very static.The first version was developed by Brendan Eich in 1995
+            while he was with Netscape, one of the first popular web browsers.
+            Since then it has gone on to have many versions and currently is
+            officially JS ES6 released in 2015 and even this version has had a
+            few more updates. It has become one of the most popular languages to
+            code in. Check out this resource to learn more and how to use it.
+            Link - <a href="https://www.javascript.com/"> javascript.com</a
+            ><!-- External link  -->
+          </p>
+        </div>
+        <button onclick="addToSaveLater(this.parentElement)">
+          Save For Later</button
+        ><button onclick="this.innerHTML='Liked!'">Like</button>
+      </div>
+    </article>
+    <!-- Table section -->
+    <section id="table-section">
+      <h3 id="table-header">Frameworks and how they help.</h3>
+      <p class="uni-spacing text-size-large">
+        Frameworks in CSS or JavaScript are ready made components that can speed
+        up the development process, it can in a way be thought of as lego blocks
+        of code that you can add to your project. Which framework you decide on
+        using depends on the project. React can make single web pages update
+        instantaneously making them very dynamic. Below is just a sample size of
+        the more popular frameworks.
+      </p>
+      <h3 class="uni-spacing">Frameworks For CSS</h3>
+      <table>
+        <tr>
+          <th>Framework</th>
+          <th>Used For</th>
+          <th>Used By</th>
+        </tr>
+        <tr>
+          <td>Bootstrap</td>
+          <td>
+            Is a component based framework, meaning forms and buttons are
+            pre-built but stil customizable.
+          </td>
+          <td>
+            Spotify, Twitter, and Udemy supposedly use it in their tech stack.
+          </td>
+        </tr>
+        <tr>
+          <td>Tailwind</td>
+          <td>
+            Is a utility based framework, unlike Bootstrap components arent
+            pre-built. It gives utility classes to costumize.
+          </td>
+          <td>Medium & Twitch</td>
+        </tr>
+        <tr>
+          <td>Bulma</td>
+          <td>
+            Is a component based framework but focuses on flexbox and in turn is
+            very mobile friendly.
+          </td>
+          <td>Rubrik</td>
+        </tr>
+      </table>
+
+      <h3 class="uni-spacing">Frameworks For JavaScript</h3>
+      <table>
+        <tr>
+          <th>Framework</th>
+          <th>Used For</th>
+          <th>Used By</th>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td>
+            Used to create interactive user interfaces and web applications
+            quickly while using significantly less code than vanilla JS. It is a
+            front-end framework developed and maintained by Meta.
+          </td>
+          <td>Meta</td>
+        </tr>
+        <tr>
+          <td>Angular</td>
+          <td>
+            Developed by Google, it uses TypeScript rather than JavaScript. A
+            fully fledge front-end framework, it is widely used to create single
+            page applications
+          </td>
+          <td>Gmail</td>
+        </tr>
+        <tr>
+          <td>Vue</td>
+          <td>
+            Like the other Vue is a front-end framework. It is design to be more
+            beginner friendly and also work with single page applications.
+          </td>
+          <td>Trivago, Netflix, Nintendo</td>
+        </tr>
+      </table>
+      <button class="save-button" onclick="addToSaveLater(this.parentElement)">
+        Save For Later</button
+      ><button onclick="this.innerHTML='Liked!'">Like</button>
+    </section>
+    <!-- The quote -->
+    <section id="quote-container">
+      <div class="quote-wrapper">
+        <p id="quote">
+          “When we first started with Apple computers, it was my dream that
+          everyone would learn to program, and that was how they'd use their
+          computer."
+        </p>
+        <p id="stevew">~Steve Wozniak~</p>
+        <button
+          class="save-button"
+          onclick="addToSaveLater(this.parentElement)"
+        >
+          Save For Later
+        </button>
+        <button onclick="this.innerHTML='Liked!'">Like</button>
+      </div>
+    </section>
+    <!-- Radio forms -->
+    <section id="form">
+      <form>
+        <p>
+          Would you like to join our WebDev newsletter to learn more about
+          coding?
+        </p>
+        <input type="radio" value="Yes" name="answer" />
+        <label for="Yes">Yes</label><br />
+        <input type="radio" value="No" name="answer" />
+        <label for="No">No</label><br />
+        <button id="button-radio" type="button">Submit</button>
+      </form>
+    </section>
+
+    <section id="comment-container">
+      <div id="comment-form-div">
+        <h2 id="comment-header">Leave A Comment</h2>
+        <form>
+          <textarea
+            name=""
+            id="comment-form"
+            cols="30"
+            rows="10"
+            placeholder="Add your comment here..."
+          ></textarea>
+          <div id="comment-btn">
+            <button type="button" id="form-submit-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <h3 id="comment-header">Comment section</h3>
+    <div id="comment-section"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
